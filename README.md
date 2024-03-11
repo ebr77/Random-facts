@@ -1,3 +1,8 @@
+![SignIn](https://github.com/ebr77/Random-facts/assets/134643518/68f5376f-3a47-44ef-85a2-fb37dc113a65)
+![SignUp](https://github.com/ebr77/Random-facts/assets/134643518/3715d876-341e-4192-b102-16359633a315)
+![Facts](https://github.com/ebr77/Random-facts/assets/134643518/d215a240-f3eb-40db-abe3-5b49379bb9a8)
+![SavedFacts](https://github.com/ebr77/Random-facts/assets/134643518/5f8577d1-aa37-40cf-805e-91c8eb7cf9f8)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
