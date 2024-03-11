@@ -1,7 +1,7 @@
 //FactViewer.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Styles/FactViewer.sass';
+import '../Styles/FactViewer.sass';
 
 const FactViewer = ({ onSaveFacts, savedFacts   }) => {
     const [language, setLanguage] = useState('en'); // Default language is English

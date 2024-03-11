@@ -1,9 +1,9 @@
 //App.js
 import React, { useState, useEffect } from 'react';
-import FactViewer from './FactViewer';
-import SignIn from './SignIn';
-import SignUp from './SignUp'; 
-import SavedFacts from './SavedFacts';
+import FactViewer from './Components/FactViewer';
+import SignIn from './Components/SignIn';
+import SignUp from './Components/SignUp'; 
+import SavedFacts from './Components/SavedFacts';
 import './Styles/App.sass'; 
 
 function App() {

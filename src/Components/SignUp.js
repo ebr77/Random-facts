@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './Styles/SignUp.sass'; 
+import '../Styles/SignUp.sass'; 
 import { FaUserAlt, FaLock } from "react-icons/fa"
 import { RiPencilFill } from "react-icons/ri";
 

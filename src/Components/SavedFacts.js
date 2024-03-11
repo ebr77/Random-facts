@@ -1,6 +1,6 @@
 // SavedFacts.js
 import React from 'react';
-import './Styles/SavedFacts.sass';
+import '../Styles/SavedFacts.sass';
 
 const SavedFacts = ({ savedFacts, removeSavedFact }) => {
     return (

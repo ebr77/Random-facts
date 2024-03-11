@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Styles/SignIn.sass'; 
+import '../Styles/SignIn.sass'; 
 import { FaUserAlt, FaLock } from "react-icons/fa";
 
 const SignIn = ({ signIn }) => {
