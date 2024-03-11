@@ -1,6 +1,19 @@
-.App {
+.App .register {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.App .register:hover{
+  text-decoration: underline;
+}
+
+
+/*.App {
   text-align: center;
 }
+
+
 
 .App-logo {
   height: 40vmin;
@@ -21,7 +34,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 41, 249);
 }
 
 .App-link {
@@ -35,4 +48,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
