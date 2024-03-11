@@ -3,6 +3,10 @@
 ![Facts](https://github.com/ebr77/Random-facts/assets/134643518/d215a240-f3eb-40db-abe3-5b49379bb9a8)
 ![SavedFacts](https://github.com/ebr77/Random-facts/assets/134643518/5f8577d1-aa37-40cf-805e-91c8eb7cf9f8)
 
+e-mail : dummy@example.com
+password: aa
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
