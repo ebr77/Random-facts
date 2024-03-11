@@ -1,11 +1,12 @@
-//FactViewer.sass
 .FactViewer-container
     text-align: center
+    
+    &:hover
+       box-shadow: none // Remove the hover effect from the parent container
 
     h1
         margin: 20px 0
         font-size: 36px
-
    
     .RandomFact-container
         width: 800px
@@ -16,8 +17,27 @@
         padding: 30px 40px
         backdrop-filter: blur(30px)
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+        margin-top: 30px
 
-        .language
+        .random-write
+            margin-top: 20px
+
+        .random-buttons
+            margin-top: 20px
+
+        .add-basket
+            width: 20%
+            height: 40px
+            margin-top: 30px
+            border-radius: 40px
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+            cursor: pointer
+            font-size: 14px
+            font-weight: 700
+            color: #333
+            
+        &:hover
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
 
     .added-random
         width: 800px
@@ -28,4 +48,30 @@
         padding: 30px 40px
         backdrop-filter: blur(30px)
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
-        
+        margin-top: 30px
+
+        &:hover
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
+
+    .get-random-fact-button,
+    .get-fact-of-the-day-button,
+    .save-button
+        margin-top: 30px
+        background: #fff
+        color: black
+        padding: 10px 15px
+        border-radius: 40px
+        transition: background-color 0.3s ease
+        width: 25%
+        height: 40px
+        cursor: pointer
+        font-size: 14px
+        font-weight: 700
+        color: #333
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
+        &:hover
+            background-color: #636363
+
+        &:hover
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)

@@ -21,7 +21,6 @@ const FactViewer = ({ onSaveFacts, savedFacts   }) => {
         }
     };
     
-
     const fetchFactOfTheDay = async () => {
         try {
             const response = await axios.get(`https://uselessfacts.jsph.pl/api/v2/facts/today?language=${language}`);
@@ -39,7 +38,6 @@ const FactViewer = ({ onSaveFacts, savedFacts   }) => {
     const handleAddToBasket = () => {
         if (fact.trim() !== '') {
         console.log('Fact to be added:', fact);
-        //onAddFact(fact); // Call the onAddFact function passed from the parent
         setRandomFacts([...randomFacts, fact]); // Update the state with the added random fact
         setFact('');
         }
@@ -56,27 +54,26 @@ const FactViewer = ({ onSaveFacts, savedFacts   }) => {
         setRandomFacts([]); // Clear the added random facts after saving
         localStorage.setItem('savedFacts', JSON.stringify([...savedFacts, ...randomFacts]));
     };
-
-      
-
-    
+ 
     return (
         <div className="FactViewer-container">
             <div className='RandomFact-container'>
                 <h1 className="FactViewer-header">Random Fact Viewer</h1>
-                <div>
-                    <label className="language" htmlFor="languageSelect">Choose a language:</label>
+                <div className='language'>
+                    <label htmlFor="languageSelect">Choose a language: </label>
                     <select id="languageSelect" value={language} onChange={handleLanguageChange}>
                         <option value="en">English</option>
                         <option value="de">German</option>
                     </select>
                 </div>
-                <div>
-                    <button onClick={fetchRandomFact}>Get Random Fact</button>
-                    <button onClick={fetchFactOfTheDay}>Get Fact of the Day</button>
+                <div className='random-buttons'>
+                    <button className='get-random-fact-button' onClick={fetchRandomFact}>Get Random Fact</button>
+                    <button className='get-fact-of-the-day-button' onClick={fetchFactOfTheDay}>Get Fact of the Day</button>
+                </div>
+                <div className='random-write'>
                     <h3>Random Fact: </h3>
                     <p>{fact}</p>
-                    <button onClick={handleAddToBasket}>Add to Basket</button>
+                    <button className='add-basket' onClick={handleAddToBasket}>Add to Basket</button>
                 </div>
             </div>    
                 <div className='added-random'>
@@ -85,11 +82,11 @@ const FactViewer = ({ onSaveFacts, savedFacts   }) => {
                         {randomFacts.map((fact, index) => (
                             <li key={index}>
                                 {fact}
-                                <button onClick={() => removeRandomFact(index)}>Remove</button>
+                                <button onClick={() => removeRandomFact(index)}> Remove </button>
                             </li>
                         ))}
                     </ul>
-                    <button onClick={handleSaveFact}>Save</button>
+                    <button className='save-button'  onClick={handleSaveFact}>Save</button>
                 </div>
         </div>
     );

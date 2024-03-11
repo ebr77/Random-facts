@@ -1,13 +1,10 @@
 //App.js
 import React, { useState, useEffect } from 'react';
 import FactViewer from './FactViewer';
-import './App.css';
 import SignIn from './SignIn';
 import SignUp from './SignUp'; 
 import SavedFacts from './SavedFacts';
 import './Styles/App.sass'; 
-
-
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -15,9 +12,6 @@ function App() {
   const [savedFacts, setSavedFacts] = useState([]);
   const [showSignUp, setShowSignUp] = useState(true);
   
-
-  
-
   useEffect(() => {
     // Check local storage for authentication status and saved facts
     const authenticated = localStorage.getItem('isAuthenticated');
@@ -47,8 +41,8 @@ const removeSavedFact = (index) => {
 };
 
 
+///////// Sign-Up,-In,-Out //////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
   const signUp = (username, email, password) => {
     // Simulate user registration
     const newUser = { username, email };
@@ -79,7 +73,7 @@ const removeSavedFact = (index) => {
     localStorage.removeItem('isAuthenticated');
     localStorage.removeItem('user');
   };
-/////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////
 
 const toggleView = () => {
   setShowSignUp(!showSignUp);
